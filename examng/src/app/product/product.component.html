@@ -1,0 +1,16 @@
+
+<div class="container-lg">
+    <h3 class="text-center">Product List </h3>
+    <div class="row" *ngFor="let product of productDetail ">
+      <div class="col-2 dummydata"></div>
+      <div class="col-2 sticky font-weight-bold">Name- {{product.Name}}</div>
+      <div class="col-2 text-right font-weight-bold">Price- {{product.Price}}</div>
+      <div class="col-2 text-right font-weight-bold">Quantity- {{product.Quantity}}</div>
+      <div class="col-2 text-right font-weight-bold">Category- {{product.Category}}</div>
+      <div class="col-2 "><button type="button" (click)="insertCart(product)" class="btn btn-success " >Add to cart</button></div>
+      
+</div>
+
+  
+</div>  
+
